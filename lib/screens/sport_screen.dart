@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moodowon_orebro/components/sport/instructor_card.dart';
 import 'package:moodowon_orebro/components/sport/sport_card.dart';
 import 'package:moodowon_orebro/components/sport/sport_header.dart';
 
@@ -77,7 +78,7 @@ class InstructorList extends StatelessWidget {
           title: 'Instruktörer',
           description: 'Vi vill hjälpa dig att hitta den bästa versionen av dig själv, i både sinnet och hälsan.',
         ),
-
+        InstructorCard(),
       ],
     );
   }
