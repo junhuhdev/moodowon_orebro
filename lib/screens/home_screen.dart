@@ -46,7 +46,6 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-      drawer: MenuDrawer(),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
