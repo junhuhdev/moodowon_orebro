@@ -15,7 +15,6 @@ class SportCard extends StatelessWidget {
       child: Card(
         elevation: 5.0,
         child: Container(
-//        margin: EdgeInsets.all(20.0),
           padding: EdgeInsets.all(30.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,

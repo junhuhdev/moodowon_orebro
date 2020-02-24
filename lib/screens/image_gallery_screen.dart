@@ -12,7 +12,7 @@ class ImageGalleryScreen extends StatelessWidget {
       length: tabs.length,
       child: Scaffold(
         appBar: TabBar(
-          labelColor: Colors.black,
+          labelColor: Colors.indigo,
           isScrollable: false,
           tabs: <Widget>[
             for (final tab in tabs) Tab(text: tab),
