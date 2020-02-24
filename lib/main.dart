@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Moodowon Orebro',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
       home: HomeScreen(),
     );

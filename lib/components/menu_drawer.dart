@@ -12,7 +12,7 @@ class MenuDrawer extends StatelessWidget {
               color: Colors.blue,
             ),
             child: Text(
-              'Drawer Header',
+              'Moodowon Örebro',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,
