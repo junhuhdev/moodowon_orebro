@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moodowon_orebro/components/common/full_image_card.dart';
 import 'package:moodowon_orebro/components/sport/instructor_card.dart';
 import 'package:moodowon_orebro/components/sport/sport_card.dart';
 import 'package:moodowon_orebro/components/sport/sport_header.dart';
@@ -40,12 +41,19 @@ class SportList extends StatelessWidget {
           title: 'Kampsport',
           description: 'Vi erbjuder dig en komplett självförsvars träning med tre klassiska koreanska kampsporter.',
         ),
-        SportCard(
-          title: 'Taekwondo',
-          description:
-              'Koreansk vapenlös kampsport som ställer höga krav på både fysisk och mental disciplin, vilket präglas av ödmjukhet och hårtarbete.',
+        FullImageCard(
           imageUrl: 'http://www.orebro.moodowon.net/gallery/tkd1.jpg',
+          title: 'Taekwondo',
+          subtitle: 'Vuxen & Barn',
+          description: 'Koreansk vapenlös kampsport som ställer höga krav på både fysisk och mental disciplin, vilket präglas av ödmjukhet och hårtarbete.',
+          height: 250.0,
         ),
+//        SportCard(
+//          title: 'Taekwondo',
+//          description:
+//              'Koreansk vapenlös kampsport som ställer höga krav på både fysisk och mental disciplin, vilket präglas av ödmjukhet och hårtarbete.',
+//          imageUrl: 'http://www.orebro.moodowon.net/gallery/tkd1.jpg',
+//        ),
         SportCard(
           title: 'Chosun Haedong Gumdo',
           description:

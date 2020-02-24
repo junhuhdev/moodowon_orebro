@@ -9,7 +9,7 @@ class SportHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(12.0),
+      padding: EdgeInsets.all(8.0),
       child: Card(
         child: Container(
           padding: EdgeInsets.all(30.0),
