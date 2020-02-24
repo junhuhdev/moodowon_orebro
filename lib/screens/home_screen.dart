@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 1.0,
         title: SizedBox(
           height: 35.0,
-          child: Image.asset("images/main_logo.jpg"),
+          child: Image.asset("images/main_logo.png"),
         ),
       ),
       body: Center(
@@ -60,16 +60,20 @@ class _HomeScreenState extends State<HomeScreen> {
             title: Text('Hem'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
+            icon: Icon(Icons.whatshot),
             title: Text('Kampsport'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            title: Text('Medlemskap'),
+            icon: Icon(Icons.star),
+            title: Text('Medlem'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
+            icon: Icon(Icons.photo_library),
             title: Text('Bilder'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.map),
+            title: Text('Kontakt'),
           ),
         ],
         currentIndex: _selectedIndex,
