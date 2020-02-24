@@ -6,13 +6,15 @@ class FullImageCard extends StatelessWidget {
   final String title;
   final String subtitle;
   final String description;
+  final double height;
 
-  const FullImageCard({this.imageUrl, this.title, this.subtitle, this.description});
+  const FullImageCard({ this.imageUrl, this.title, this.subtitle, this.description, this.height});
+
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 250.0,
+      height: height,
       child: Card(
         child: Stack(
           children: <Widget>[

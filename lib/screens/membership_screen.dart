@@ -44,18 +44,21 @@ class MembershipList extends StatelessWidget {
           title: 'Taekwondo',
           subtitle: '1000 SEK per termin',
           description: 'Barn & Ungdomgrupp 7-17 år 800 SEK',
+          height: 250.0,
         ),
         FullImageCard(
           imageUrl: 'https://i.pinimg.com/originals/55/7e/9c/557e9c9f565a61b58008a61a0842f497.jpg',
           title: 'Chosun Haedong Gumdo',
           subtitle: '1000 SEK per termin',
           description: 'Barn & Ungdomgrupp 7-17 år 800 SEK',
+          height: 250.0,
         ),
         FullImageCard(
           imageUrl: 'https://www.tryimpact.com.au/wp-content/uploads/2018/01/Hapkido-1-black-background.jpg',
           title: 'Hapkido',
           subtitle: '1000 SEK per termin',
           description: 'Barn & Ungdomgrupp 7-17 år 800 SEK',
+          height: 250.0,
         ),
       ],
     );
