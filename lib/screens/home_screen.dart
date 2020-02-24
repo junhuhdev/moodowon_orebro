@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:moodowon_orebro/screens/contact_screen.dart';
+import 'package:moodowon_orebro/screens/image_gallery_screen.dart';
+import 'package:moodowon_orebro/screens/main_screen.dart';
+import 'package:moodowon_orebro/screens/membership_screen.dart';
+import 'package:moodowon_orebro/screens/sport_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -19,22 +24,11 @@ class _HomeScreenState extends State<HomeScreen> {
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    const MainScreen(),
+    const SportScreen(),
+    const MembershipScreen(),
+    const ImageGalleryScreen(),
+    const ContactScreen(),
   ];
 
   @override

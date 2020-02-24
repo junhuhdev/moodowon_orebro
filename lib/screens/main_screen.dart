@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-class SportScreen extends StatelessWidget {
-  const SportScreen();
+class MainScreen extends StatelessWidget {
+  const MainScreen();
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
-    );
+    return Scaffold();
   }
 }
