@@ -16,7 +16,11 @@ class ImageItem extends StatelessWidget {
           clipBehavior: Clip.antiAlias,
           child: InkWell(
             onTap: () {
-              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => ImageFullScreen(image: image),
+                ),
+              );
             },
             child: CachedNetworkImage(
               placeholder: (context, url) => Container(
@@ -30,6 +34,35 @@ class ImageItem extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class ImageFullScreen extends StatelessWidget {
+  final String image;
+
+  const ImageFullScreen({this.image});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
+      body: Hero(
+        tag: image,
+        child: CachedNetworkImage(
+          placeholder: (context, url) => Container(
+            child: CircularProgressIndicator(
+              strokeWidth: 1.0,
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.grey),
+            ),
+            padding: EdgeInsets.all(10.0),
+          ),
+          imageUrl: image,
+          fit: BoxFit.contain,
         ),
       ),
     );

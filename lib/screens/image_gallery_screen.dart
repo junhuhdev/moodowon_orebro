@@ -7,16 +7,43 @@ class ImageGalleryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    List<String> tabs = ['Taekwondo', 'Gumdo', 'Hapkido'];
+    return DefaultTabController(
+      length: tabs.length,
       child: Scaffold(
-        body: GridView.count(
-          primary: false,
-          padding: const EdgeInsets.all(20.0),
-          crossAxisSpacing: 10.0,
-          crossAxisCount: 2,
-          children: ImageGalleryData.tkdImages.map((image) => ImageItem(image: image)).toList(),
+        appBar: TabBar(
+          labelColor: Colors.black,
+          isScrollable: false,
+          tabs: <Widget>[
+            for (final tab in tabs) Tab(text: tab),
+          ],
+        ),
+        body: TabBarView(
+          children: <Widget>[
+            Gallery(images: ImageGalleryData.tkdImages),
+            Gallery(images: ImageGalleryData.gumdoImages),
+            Gallery(images: ImageGalleryData.hapkidoImages),
+          ],
         ),
       ),
+    );
+  }
+}
+
+class Gallery extends StatelessWidget {
+  final List<String> images;
+
+  const Gallery({this.images});
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.count(
+      primary: false,
+      padding: const EdgeInsets.all(20.0),
+      crossAxisSpacing: 10.0,
+      crossAxisCount: 2,
+      childAspectRatio: 1,
+      children: images.map((image) => ImageItem(image: image)).toList(),
     );
   }
 }
