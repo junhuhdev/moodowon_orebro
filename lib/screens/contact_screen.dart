@@ -5,6 +5,14 @@ class ContactScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container(
+      child: Column(
+        children: <Widget>[
+          Text('Hitta oss'),
+          Text('Vi finns i Almbyskolan Örebro, nära universitetet.'),
+
+        ],
+      ),
+    );
   }
 }

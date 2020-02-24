@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moodowon_orebro/components/menu_drawer.dart';
 import 'package:moodowon_orebro/screens/contact_screen.dart';
 import 'package:moodowon_orebro/screens/image_gallery_screen.dart';
 import 'package:moodowon_orebro/screens/main_screen.dart';
@@ -35,7 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
         centerTitle: true,
         elevation: 1.0,
         title: SizedBox(
@@ -46,6 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
+      drawer: MenuDrawer(),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
