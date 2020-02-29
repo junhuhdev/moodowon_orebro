@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moodowon_orebro/components/common/HeaderText.dart';
 import 'package:moodowon_orebro/components/common/full_image_card.dart';
 import 'package:moodowon_orebro/components/sport/sport_header.dart';
 
@@ -35,9 +36,11 @@ class MembershipList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
-        SportHeader(
+        HeaderText(
           title: 'Medlemskap',
-          description: 'Välj mellan tre av våra koreanska kampsporter och börja träna redan idag!',
+          description:
+              'Träningsavgiften är olika beroende på ålder. I avgiftern ingår försäkring via Svenska Taekwondoförbundet och Sveriges Riksidrottsförbundet hos Folksam på medlemmar som erlagt halv- eller helårsavgift.',
+          subDescription: 'Välj mellan tre av våra koreanska kampsporter och börja träna redan idag.',
         ),
         FullImageCard(
           imageUrl: 'http://www.orebro.moodowon.net/img/pricing_tkd2.jpg',
@@ -63,5 +66,4 @@ class MembershipList extends StatelessWidget {
       ],
     );
   }
-
 }
