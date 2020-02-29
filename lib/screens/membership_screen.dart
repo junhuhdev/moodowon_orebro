@@ -23,7 +23,7 @@ class MembershipScreen extends StatelessWidget {
         body: TabBarView(
           children: <Widget>[
             MembershipList(),
-            Container(),
+            TrainingSchedule(),
           ],
         ),
       ),
@@ -62,6 +62,115 @@ class MembershipList extends StatelessWidget {
           subtitle: '1000 SEK per termin',
           description: 'Barn & Ungdomgrupp 7-17 år 800 SEK',
           height: 250.0,
+        ),
+      ],
+    );
+  }
+}
+
+class TrainingSchedule extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: <Widget>[
+        HeaderText(
+          title: 'Schema',
+          description: 'Schema för barn nybörjargrupp, barn fortsättningsgrupp, ungdom- & vuxengrupp.',
+          subDescription:
+              'Vi har just nu bara TKD träningar men vi ska ha andra kampsport träningar i början på nästa termin.',
+        ),
+        Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Card(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text('Barn Nybörjargruppen', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+                  SizedBox(height: 20.0),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.watch_later, color: Colors.black45),
+                      SizedBox(width: 10.0),
+                      Text('Tisdag mellan 18:00-19:00'),
+                    ],
+                  ),
+                  SizedBox(height: 10.0),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.watch_later, color: Colors.black45),
+                      SizedBox(width: 10.0),
+                      Text('Lördag mellan 13:00-14:00'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Card(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text('Barn Fortsättningsgruppen', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+                  SizedBox(height: 20.0),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.watch_later, color: Colors.black45),
+                      SizedBox(width: 10.0),
+                      Text('Onsdag mellan 18:00-19:00'),
+                    ],
+                  ),
+                  SizedBox(height: 10.0),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.watch_later, color: Colors.black45),
+                      SizedBox(width: 10.0),
+                      Text('Lördag mellan 14:00-15:00'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Card(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text('Ungdom- och Vuxengruppen', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+                  SizedBox(height: 20.0),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.watch_later, color: Colors.black45),
+                      SizedBox(width: 10.0),
+                      Text('Onsdag mellan 19:00-20:00'),
+                    ],
+                  ),
+                  SizedBox(height: 10.0),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.watch_later, color: Colors.black45),
+                      SizedBox(width: 10.0),
+                      Text('Lördag mellan 15:00-16:00'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

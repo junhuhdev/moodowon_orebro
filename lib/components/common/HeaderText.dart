@@ -1,8 +1,9 @@
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class HeaderText extends StatelessWidget {
-
   final String title;
   final String description;
   final String subDescription;
@@ -31,5 +32,4 @@ class HeaderText extends StatelessWidget {
       ),
     );
   }
-
 }
