@@ -87,7 +87,49 @@ class InstructorList extends StatelessWidget {
           title: 'Instruktörer',
           description: 'Vi vill hjälpa dig att hitta den bästa versionen av dig själv, i både sinnet och hälsan.',
         ),
-        InstructorCard(),
+        InstructorCard(
+          name: 'GM Mästare Simon Lim',
+          grade: 'Ledare & Instruktör',
+          description: 'Mästare Simon är en flerfaldig koreansk mästare med internationella meriter. År 1988 grundade han sin egen förening, Örebro taekwondo föreningen.',
+          imageUrl: 'http://www.orebro.moodowon.net/img/team/simonlim_bakgrund.jpg',
+        ),
+        InstructorCard(
+          name: 'Mikael Soron',
+          grade: 'TKD Instruktör - 2:a Dan TKD',
+          description: '',
+          imageUrl: 'http://www.orebro.moodowon.net/img/pricing_tkd2.jpg',
+        ),
+        InstructorCard(
+          name: 'Rikard Marklund',
+          grade: 'Hapkido Instruktör - 2:a Dan Hapkido',
+          description: '',
+          imageUrl: 'https://www.tryimpact.com.au/wp-content/uploads/2018/01/Hapkido-1-black-background.jpg',
+        ),
+        InstructorCard(
+          name: 'Björn Marklund',
+          grade: 'TKD & Hapkido Instruktör - 1:a Dan',
+          description: '',
+          imageUrl: 'https://www.tryimpact.com.au/wp-content/uploads/2018/01/Hapkido-1-black-background.jpg',
+        ),
+        InstructorCard(
+          name: 'Hanna Lim',
+          grade: 'TKD Instruktör - 1:a Dan',
+          description: '',
+          imageUrl: 'http://www.orebro.moodowon.net/img/pricing_tkd2.jpg',
+        ),
+        InstructorCard(
+          name: 'Mal Sook',
+          grade: 'TKD & Hapkido Instruktör - 1:a Dan',
+          description: '',
+          imageUrl: 'http://www.orebro.moodowon.net/img/pricing_tkd2.jpg',
+        ),
+        InstructorCard(
+          name: 'Johan Lans',
+          grade: 'TKD Instruktör - 3:a Dan',
+          description: '',
+          imageUrl: 'http://www.orebro.moodowon.net/gallery/tkd2.jpg',
+        ),
+
       ],
     );
   }

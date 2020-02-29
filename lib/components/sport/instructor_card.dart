@@ -2,6 +2,13 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class InstructorCard extends StatelessWidget {
+  final String name;
+  final String grade;
+  final String description;
+  final String imageUrl;
+
+  const InstructorCard({this.name, this.grade, this.description, this.imageUrl});
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -15,7 +22,12 @@ class InstructorCard extends StatelessWidget {
               height: 338.0,
               child: Card(
                 clipBehavior: Clip.antiAlias,
-                child: Content(),
+                child: Content(
+                  name: name,
+                  grade: grade,
+                  description: description,
+                  imageUrl: imageUrl,
+                ),
               ),
             )
           ],
@@ -26,6 +38,13 @@ class InstructorCard extends StatelessWidget {
 }
 
 class Content extends StatelessWidget {
+  final String name;
+  final String grade;
+  final String description;
+  final String imageUrl;
+
+  const Content({this.name, this.grade, this.description, this.imageUrl});
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -35,7 +54,7 @@ class Content extends StatelessWidget {
             borderRadius: new BorderRadius.circular(12.0),
             child: new CachedNetworkImage(
               placeholder: (context, url) => CircularProgressIndicator(),
-              imageUrl: 'http://www.orebro.moodowon.net/img/team/simonlim_bakgrund.jpg',
+              imageUrl: imageUrl,
               fit: BoxFit.cover,
             ),
           ),
@@ -59,13 +78,12 @@ class Content extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                new Text('GM Mästare Simon Lim',
-                    style: new TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
+                new Text(name, style: new TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
                 new Padding(padding: new EdgeInsets.only(bottom: 1.0)),
-                new Text('Ledare & Instruktör', style: new TextStyle(fontSize: 13.0, color: Colors.white)),
+                new Text(grade, style: new TextStyle(fontSize: 13.0, color: Colors.white)),
                 new Padding(padding: new EdgeInsets.only(bottom: 4.0)),
                 new Text(
-                  'Mästare Simon är en flerfaldig koreansk mästare med internationella meriter. År 1988 grundade han sin egen förening, Örebro taekwondo föreningen.',
+                  description,
                   textAlign: TextAlign.start,
                   style: TextStyle(fontSize: 11.0, color: Colors.white),
                 ),
