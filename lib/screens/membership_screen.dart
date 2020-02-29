@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moodowon_orebro/components/common/HeaderText.dart';
+import 'package:moodowon_orebro/components/common/header_text.dart';
 import 'package:moodowon_orebro/components/common/full_image_card.dart';
 import 'package:moodowon_orebro/components/sport/sport_header.dart';
 
