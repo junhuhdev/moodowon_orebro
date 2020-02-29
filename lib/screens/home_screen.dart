@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         elevation: 1.0,
         title: SizedBox(
-          height: 35.0,
+          height: 45.0,
           child: Image.asset("images/main_logo.png"),
         ),
         actions: <Widget>[
