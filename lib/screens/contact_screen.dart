@@ -41,10 +41,10 @@ class ContactInfo extends StatelessWidget {
         children: <Widget>[
           SportHeader(
             title: 'Kontakt',
-            description: 'Vi erbjuder dig en komplett självförsvars träning med tre klassiska koreanska kampsporter.',
+            description: 'Vi välkommnar dig till vår organisation, kontakta oss för eventuella frågor.',
           ),
           Padding(
-            padding: const EdgeInsets.all(35.0),
+            padding: const EdgeInsets.only(top: 10.0, right: 40.0, left: 40.0),
             child: Column(
               children: <Widget>[
                 TextFormField(
