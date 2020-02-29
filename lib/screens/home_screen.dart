@@ -42,6 +42,18 @@ class _HomeScreenState extends State<HomeScreen> {
           height: 35.0,
           child: Image.asset("images/main_logo.png"),
         ),
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(right: 5.0),
+            child: FlatButton(
+              child: Text(
+                'Anmäl dig',
+                style: TextStyle(color: Colors.white),
+              ),
+              onPressed: () {},
+            ),
+          )
+        ],
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
