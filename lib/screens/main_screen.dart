@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:moodowon_orebro/components/common/full_background_card.dart';
-import 'package:moodowon_orebro/components/common/full_image_card.dart';
-import 'package:moodowon_orebro/components/sport/sport_header.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen();
@@ -10,12 +8,6 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("images/background_image_2.jpg"),
-            fit: BoxFit.cover,
-          ),
-        ),
         constraints: BoxConstraints.expand(),
         child: Container(
           child: Column(
@@ -25,17 +17,14 @@ class MainScreen extends StatelessWidget {
               SizedBox(height: 20.0),
               Text(
                 'Ta hand om din kropp och sinne.',
-                style: TextStyle(fontSize: 20.0, color: Colors.white),
               ),
               SizedBox(height: 10.0),
               Text(
                 'Kom och träna Taekwondo med oss i Örebro.',
-                style: TextStyle(fontSize: 15.0, color: Colors.white),
               ),
               SizedBox(height: 10.0),
               Text(
                 'Vi erbjuder följande.',
-                style: TextStyle(fontSize: 15.0, color: Colors.white),
               ),
               Expanded(
                 child: GridView.count(
@@ -68,8 +57,7 @@ class MainScreen extends StatelessWidget {
                       subtitle: '',
                       description: '',
                       height: 250,
-                      imageUrl:
-                          'http://www.orebro.moodowon.net/gallery/zen/zen1.jpg',
+                      imageUrl: 'http://www.orebro.moodowon.net/gallery/zen/zen1.jpg',
                     )
                   ],
                 ),
