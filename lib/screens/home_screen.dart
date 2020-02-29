@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moodowon_orebro/components/menu_drawer.dart';
+import 'package:moodowon_orebro/components/registration/email_form.dart';
 import 'package:moodowon_orebro/screens/contact_screen.dart';
 import 'package:moodowon_orebro/screens/image_gallery_screen.dart';
 import 'package:moodowon_orebro/screens/main_screen.dart';
@@ -50,7 +51,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 'Anmäl dig',
                 style: TextStyle(color: Colors.white),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => EmailForm(),
+                  ),
+                );
+              },
             ),
           )
         ],
