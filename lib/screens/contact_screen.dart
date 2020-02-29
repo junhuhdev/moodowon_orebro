@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+import 'package:moodowon_orebro/components/contact/map_card.dart';
 import 'package:moodowon_orebro/components/sport/sport_header.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -25,7 +26,7 @@ class ContactScreen extends StatelessWidget {
         body: TabBarView(
           children: <Widget>[
             ContactInfo(),
-            LocationInfo(),
+            MapCard(),
           ],
         ),
       ),
