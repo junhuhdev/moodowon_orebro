@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
             title: Text('Bilder'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.map),
+            icon: Icon(Icons.place),
             title: Text('Kontakt'),
           ),
         ],
