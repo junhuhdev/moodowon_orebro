@@ -35,7 +35,7 @@ class MapCard extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: new Row(
               children: [
-                Icon(Icons.map, color: Colors.white),
+                Icon(Icons.place, color: Colors.white),
                 SizedBox(width: 10.0),
                 new Expanded(
                   child: new Text(
